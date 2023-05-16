@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: 'blog-45372c56581648e4b130054dbe6f2420',
+  rootNotionPageId: 'BLOG-45372c56581648e4b130054dbe6f2420',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -16,7 +16,8 @@ export default siteConfig({
   // open graph metadata (optional)
   description: '',
 
-  // social usernames (optional)  // twitter: 'transitive_bs',
+  // social usernames (optional)
+  // twitter: '',
   github: 'chuyun',
   // linkedin: '',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
@@ -52,6 +53,10 @@ export default siteConfig({
   // navigationStyle: 'default'
   navigationStyle: 'custom',
   navigationLinks: [
+    // {
+    //   title: 'Wiki',
+    //   pageId: '4fc3f5d4c4c94173aaae55b8a697d63f?v=a8579ed3a4224b1cb2a310a0e890e53e',
+    // },
     {
       title: 'About',
       pageId: 'About-73670ad0df644e2aab9730e9716a7c17'
