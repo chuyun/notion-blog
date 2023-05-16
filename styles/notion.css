@@ -137,7 +137,7 @@
 }
 
 .notion-hr {
-  margin: 2em 0;
+  /*margin: 2em 0;*/
 }
 
 @media only screen and (max-width: 920px) {
@@ -167,7 +167,7 @@
 
 .notion-title {
   display: block;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .notion-collection-row {
