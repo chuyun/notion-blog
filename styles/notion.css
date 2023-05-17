@@ -10,6 +10,7 @@
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
+  font-size: 14px;
 }
 
 .notion-frame {
@@ -53,9 +54,16 @@
 }
 
 .notion-gallery-grid {
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  grid-gap: 6vmin;
-  gap: 6vmin;
+  /*grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));*/
+  /*grid-gap: 6vmin;*/
+  /*gap: 6vmin;*/
+
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding-top: 16px;
+  padding-bottom: 4px;
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
@@ -77,12 +85,15 @@
 }
 
 .notion-collection-card {
-  border-radius: 16px;
-  box-shadow: none;
+  /*border-radius: 16px;*/
+  /*box-shadow: none;*/
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  border-radius: 3px;
+  background: white;
 }
 
 .notion-collection-card-cover img {
-  border-radius: 16px;
+  /*border-radius: 16px;*/
 }
 
 .notion-collection-card {
@@ -90,12 +101,12 @@
 }
 
 .notion-collection-card-cover {
-  border-radius: 16px;
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+  /*border-radius: 16px;*/
+  /*box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);*/
 }
 
 .notion-collection-card-cover {
-  border-bottom: 0 none;
+  /*border-bottom: 0 none;*/
   transition: filter 150ms linear;
   filter: none;
 }
@@ -119,11 +130,14 @@
 }
 
 .notion-quote {
-  padding: 0.2em 0.75em;
-  line-height: 1.5;
-  font-style: italic;
-  font-size: 1.2em;
-  border-left: 4px solid #67bdfc;
+  /*padding: 0.2em 0.75em;*/
+  /*line-height: 1.5;*/
+  /*font-style: italic;*/
+  font-size: 1em;
+  /*border-left: 4px solid #67bdfc;*/
+  /*padding: 0 10px 0 20px;*/
+  border-left: 4px solid #ddd;
+  margin: 0;
 }
 
 .notion-h1,
@@ -347,9 +361,21 @@
 }
 
 /* if you don't want rounded page icon images, remove this */
+
+.notion-page-icon-hero{
+  position: relative;
+  top: unset;
+  left: unset;
+}
+
+.notion-page-icon-hero.notion-page-icon-span{
+  margin-left: 0;
+  margin-bottom: 20px;
+}
 .notion-page-icon-hero.notion-page-icon-image {
   border-radius: 50%;
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
+  margin-left: 0;
 }
 .notion-page-icon-hero.notion-page-icon-image span,
 .notion-page-icon-hero.notion-page-icon-image img {
@@ -385,4 +411,9 @@
 
 .notion-block-260baa77f1e1428b97fb14ac99c7c385 {
   display: none;
+}
+
+/*table*/
+.notion-simple-table{
+  width: 100%;
 }
