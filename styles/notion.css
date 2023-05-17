@@ -71,8 +71,8 @@
 }
 
 .notion-gallery-grid .notion-page-title-text {
-  font-size: 2em;
-  white-space: unset;
+  /*font-size: 2em;*/
+  /*white-space: unset;*/
 }
 
 .notion-gallery-grid .notion-collection-card-property {
@@ -94,6 +94,7 @@
 
 .notion-collection-card-cover img {
   /*border-radius: 16px;*/
+  object-fit: cover!important;
 }
 
 .notion-collection-card {
