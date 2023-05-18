@@ -57,13 +57,17 @@ export default siteConfig({
       title: 'Wiki',
       pageId: 'Wiki-4fc3f5d4c4c94173aaae55b8a697d63f',
     },
+    // {
+    //   title: 'Timeline',
+    //   pageId: 'Timeline-22abdf8e63c54eef97b425461c7669f0',
+    // },
     {
       title: 'About',
       pageId: 'About-73670ad0df644e2aab9730e9716a7c17'
     },
     {
-      title: 'Friends',
-      pageId: 'Friends-337874585b254350a9137cacc8884c34'
+      title: 'Links',
+      pageId: 'Links-337874585b254350a9137cacc8884c34'
     }
   ]
 })
