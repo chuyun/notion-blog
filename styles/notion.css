@@ -97,6 +97,10 @@
   /*object-fit: cover!important;*/
 }
 
+.notion-collection-card-cover span{
+  display: block!important;
+}
+
 .notion-collection-card {
   overflow: visible;
 }
