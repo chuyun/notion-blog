@@ -56,11 +56,19 @@
 }
 
 .copyright {
-  font-size: 80%;
+  font-size: 90%;
   padding: 0.5em;
+  line-height: 1.5;
+}
+
+.gov{
+  font-size: 90%;
+  padding: 0.5em;
+  line-height: 1.5;
 }
 
 .settings,
+.gov,
 .social {
   user-select: none;
 }
@@ -140,6 +148,10 @@
   }
   .footer .copyright {
     order: 3;
+    text-align: center;
+  }
+  .footer .gov{
+    display: none;
   }
 }
 

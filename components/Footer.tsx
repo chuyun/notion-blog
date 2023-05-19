@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import * as React from 'react'
 
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
@@ -12,12 +13,15 @@ import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 
 import * as config from '@/lib/config'
 // import { useDarkMode } from '@/lib/use-dark-mode'
-
+import { X } from '@/lib/x';
 import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
 export const FooterImpl: React.FC = () => {
+  useEffect(() => {
+    X(document.getElementById('x-animate'));
+  },[]);
   // const [hasMounted, setHasMounted] = React.useState(false)
   // const { isDarkMode, toggleDarkMode } = useDarkMode()
 
@@ -35,21 +39,35 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>© Copyright {new Date().getFullYear()} {config.author}</div>
+      <div className={styles.copyright}>
+        <div id='x-animate'></div>
 
-      <div className={styles.settings}>
-        {/*{hasMounted && (*/}
-        {/*  <a*/}
-        {/*    className={styles.toggleDarkMode}*/}
-        {/*    href='#'*/}
-        {/*    role='button'*/}
-        {/*    onClick={onToggleDarkMode}*/}
-        {/*    title='Toggle dark mode'*/}
-        {/*  >*/}
-        {/*    {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}*/}
-        {/*  </a>*/}
-        {/*)}*/}
+        <div>Copyright &copy;  {new Date().getFullYear()} {config.author}</div>
       </div>
+
+      <div className={styles.gov}>
+        <a
+          href="https://beian.miit.gov.cn/"
+          target='_blank'
+          rel='noopener noreferrer'
+          title='ICP'
+        >
+          鄂ICP备17014074号-1
+        </a>
+      </div>
+      {/*<div className={styles.settings}>*/}
+      {/*  /!*{hasMounted && (*!/*/}
+      {/*  /!*  <a*!/*/}
+      {/*  /!*    className={styles.toggleDarkMode}*!/*/}
+      {/*  /!*    href='#'*!/*/}
+      {/*  /!*    role='button'*!/*/}
+      {/*  /!*    onClick={onToggleDarkMode}*!/*/}
+      {/*  /!*    title='Toggle dark mode'*!/*/}
+      {/*  /!*  >*!/*/}
+      {/*  /!*    {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}*!/*/}
+      {/*  /!*  </a>*!/*/}
+      {/*  /!*)}*!/*/}
+      {/*</div>*/}
 
       <div className={styles.social}>
         {config.twitter && (
