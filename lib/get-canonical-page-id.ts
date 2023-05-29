@@ -22,6 +22,6 @@ export function getCanonicalPageId(
   } else {
     return getCanonicalPageIdImpl(pageId, recordMap, {
       uuid
-    })
+    }).split('-').slice(-1).join('')
   }
 }

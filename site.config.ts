@@ -8,6 +8,8 @@ export default siteConfig({
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
+  includeNotionIdInUrls: true,
+
   // basic site info (required)
   name: 'ONE',
   domain: 'www.juncao.cc',
