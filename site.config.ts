@@ -36,7 +36,7 @@ export default siteConfig({
   //
   // To generate the following configs, visit https://giscus.app/.
   giscusGithubConfig: {
-    repo: 'chuyun/notion-blog',
+    repo: 'chuyun/giscus-comments',
     repoId: 'R_kgDOJs5F6A',
     category: 'General',
     categoryId: 'DIC_kwDOJs5F6M4CXDwl',
