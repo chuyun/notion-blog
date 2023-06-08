@@ -38,7 +38,7 @@ export default siteConfig({
   giscusGithubConfig: {
     repo: 'chuyun/giscus-comments',
     repoId: 'R_kgDOJs5F6A',
-    category: 'General',
+    category: 'Comments',
     categoryId: 'DIC_kwDOJs5F6M4CXDwl',
     mapping: 'title',
     reactionsEnabled: '1',
