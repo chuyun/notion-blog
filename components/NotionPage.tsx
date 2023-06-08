@@ -18,6 +18,7 @@ import { mapImageUrl } from '@/lib/map-image-url'
 import { getCanonicalPageUrl, mapPageUrl } from '@/lib/map-page-url'
 import { searchNotion } from '@/lib/search-notion'
 import { useDarkMode } from '@/lib/use-dark-mode'
+import ReactGiscus from '@/components/ReactGiscus';
 
 import { Footer } from './Footer'
 // import { GitHubShareButton } from './GitHubShareButton'
@@ -242,6 +243,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
 
+
+  let comments: React.ReactNode = null
+
+  // only display comments and page actions on blog post pages
+  if (isBlogPost && config.giscusConfig.valid()) {
+    comments = <ReactGiscus darkMode={isDarkMode} />
+  }
+
   return (
     <>
       <PageHead
@@ -279,6 +288,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
+        pageFooter={comments}
       />
 
       {/*<GitHubShareButton />*/}

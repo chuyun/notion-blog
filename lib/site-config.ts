@@ -1,3 +1,4 @@
+import { GiscusProps } from '@giscus/react'
 import * as types from './types'
 
 export interface SiteConfig {
@@ -21,6 +22,8 @@ export interface SiteConfig {
   defaultPageIcon?: string | null
   defaultPageCover?: string | null
   defaultPageCoverPosition?: number | null
+
+  giscusGithubConfig?: GiscusProps
 
   isPreviewImageSupportEnabled?: boolean
   isTweetEmbedSupportEnabled?: boolean

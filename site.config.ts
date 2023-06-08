@@ -32,6 +32,20 @@ export default siteConfig({
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
+  // Giscus comments via Github Discusstion (optional)
+  //
+  // To generate the following configs, visit https://giscus.app/.
+  giscusGithubConfig: {
+    repo: 'chuyun/notion-blog',
+    repoId: 'R_kgDOJs5F6A',
+    category: 'General',
+    categoryId: 'DIC_kwDOJs5F6M4CXDwl',
+    mapping: 'title',
+    reactionsEnabled: '1',
+    theme: 'light',
+    term: null
+  },
+
   // whether or not to enable support for LQIP preview images (optional)
   isPreviewImageSupportEnabled: true,
 
