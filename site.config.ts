@@ -43,6 +43,8 @@ export default siteConfig({
     mapping: 'title',
     reactionsEnabled: '1',
     theme: 'light',
+    inputPosition: 'top',
+    lang: 'zh-CN',
     term: null
   },
 
