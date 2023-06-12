@@ -25,7 +25,7 @@ export function getCanonicalPageId(
     });
     const pageIdFullArr = pageIdFull.split('-');
     const uuidString = pageIdFullArr.slice(-1).join('');
-    const slug = pageIdFullArr.slice(0, -1).join('');
+    const slug = pageIdFullArr.slice(0, -1).join('-');
     if (/^[a-zA-Z0-9-_]+$/.test(slug)) {
       return slug;
     } else {
