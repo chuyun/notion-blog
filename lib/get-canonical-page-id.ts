@@ -20,8 +20,16 @@ export function getCanonicalPageId(
   if (override) {
     return override
   } else {
-    return getCanonicalPageIdImpl(pageId, recordMap, {
+    const pageIdFull = getCanonicalPageIdImpl(pageId, recordMap, {
       uuid
-    }).split('-').slice(-1).join('')
+    });
+    const pageIdFullArr = pageIdFull.split('-');
+    const uuidString = pageIdFullArr.slice(-1).join('');
+    const slug = pageIdFullArr.slice(0, -1).join('');
+    if (/^[a-zA-Z0-9-_]+$/.test(slug)) {
+      return slug;
+    } else {
+      return uuidString;
+    }
   }
 }
