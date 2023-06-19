@@ -44,7 +44,7 @@ export default siteConfig({
     reactionsEnabled: '1',
     theme: 'light',
     inputPosition: 'top',
-    lang: 'zh-CN',
+    // lang: 'zh-CN',
     term: null
   },
 
