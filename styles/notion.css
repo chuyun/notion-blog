@@ -30,6 +30,10 @@
   padding: 0.5em 2px;
 }
 
+.notion-column .notion-text {
+  padding: 0;
+}
+
 .notion-asset-caption {
   text-align: center;
 }
