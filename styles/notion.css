@@ -10,7 +10,7 @@
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .notion-frame {
@@ -67,7 +67,11 @@
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
-  /*display: none;*/
+  display: none;
+
+}
+
+.notion-block-111633a2bdfb4a1d93eb3799100ad5b8 .notion-gallery-grid .notion-page-icon-inline {
   display: flex;
   justify-content: center;
   align-items: center;
