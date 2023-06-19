@@ -280,7 +280,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   let comments: React.ReactNode = null
 
   // only display comments and page actions on blog post pages
-  if (isBlogPost && config.giscusConfig.valid()) {
+  if ((isBlogPost || title.toUpperCase() === 'LINKS') && config.giscusConfig.valid()) {
     comments = <ReactGiscus darkMode={isDarkMode} />
   }
 
