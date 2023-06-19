@@ -67,7 +67,10 @@
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
-  display: none;
+  /*display: none;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .notion-gallery-grid .notion-page-title-text {
