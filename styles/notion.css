@@ -99,6 +99,10 @@
 
 .notion-gallery-grid .notion-property-text {
   font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .notion-collection-card {
@@ -467,4 +471,12 @@
 
 .notion-equation.notion-equation-block{
   align-items: center;
+}
+
+
+.notion-two-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
