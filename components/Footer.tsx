@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import * as React from 'react'
 
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
@@ -19,11 +18,12 @@ import styles from './styles.module.css'
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
 export const FooterImpl: React.FC = () => {
-  useEffect(() => {
-    X(document.getElementById('x-animate'));
-  },[]);
   // const [hasMounted, setHasMounted] = React.useState(false)
   // const { isDarkMode, toggleDarkMode } = useDarkMode()
+  const currentYear = new Date().getFullYear()
+  React.useEffect(() => {
+    X(document.getElementById('x-animate'));
+  },[]);
 
   // const onToggleDarkMode = React.useCallback(
   //   (e) => {
@@ -42,7 +42,7 @@ export const FooterImpl: React.FC = () => {
       <div className={styles.copyright}>
         <div id='x-animate'></div>
 
-        <div>Copyright &copy;  {new Date().getFullYear()} {config.author}</div>
+        <div>Copyright &copy;  {currentYear} {config.author}</div>
       </div>
 
       <div className={styles.gov}>
